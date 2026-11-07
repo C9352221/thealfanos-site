@@ -41,7 +41,7 @@ h2 { font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; margin
 /* Hero */
 .hero { position: relative; min-height: clamp(640px, 100vh, 980px); display: flex; align-items: center; overflow: hidden; }
 .hero { background: #05050f; }
-.hero-bg { position: absolute; inset: 0 0 0 42%; background: url("../img/hero.jpg") 45% 25% / cover no-repeat; }
+.hero-bg { position: absolute; inset: 72px 0 0 42%; background: url("../img/hero.jpg") 45% 0% / cover no-repeat; }
 .hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #05050f 0%, rgba(5,5,15,.55) 22%, rgba(5,5,15,0) 45%), linear-gradient(0deg, var(--bg) 0%, transparent 25%); }
 .hero-copy { position: relative; padding-top: 72px; }
 .hero h1 { font-size: clamp(52px, 7vw, 100px); line-height: .95; font-weight: 700; max-width: 9em; }
@@ -130,7 +130,7 @@ h2 { font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; margin
   .nav-row { gap: 16px; }
   .brand { font-size: 20px; letter-spacing: .12em; }
   .hero { min-height: clamp(600px, 92vh, 860px); align-items: flex-end; padding-bottom: 56px; }
-  .hero-bg { inset: 0; background-position: 62% 20%; }
+  .hero-bg { inset: 72px 0 0 0; background-position: 62% 0%; }
   .hero-bg::after { background: linear-gradient(0deg, rgba(5,5,12,.97) 0%, rgba(5,5,12,.75) 45%, rgba(5,5,12,.1) 75%); }
   .strip-row { grid-template-columns: 1fr 1fr; }
   .strip-row div:nth-child(3) { border-left: 0; }
