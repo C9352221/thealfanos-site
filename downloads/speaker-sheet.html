@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Marc Alfano Speaker Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@page { size: Letter; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 8.5in; height: 11in; }
+body { background: #0a0a0a; color: #f4efe6; font: 400 10.5pt/1.5 "Inter", sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.top { position: relative; height: 4.1in; background: #05050f; overflow: hidden; }
+.top .photo { position: absolute; top: 0; right: 0; bottom: 0; width: 62%; background: url("../img/hero.jpg") 45% 0% / cover; }
+.top .photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #05050f 0%, rgba(5,5,15,.4) 30%, transparent 55%), linear-gradient(0deg, #0a0a0a 0%, transparent 30%); }
+.top .copy { position: relative; padding: .5in .6in; width: 58%; }
+.brand { font: 600 11pt "Oswald"; letter-spacing: .22em; text-transform: uppercase; color: #d4af5a; }
+h1 { font: 700 38pt/0.98 "Oswald"; text-transform: uppercase; margin-top: .4in; }
+.sub { font-size: 11.5pt; color: #e8e2d8; margin-top: 12px; }
+.strip { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #b8913a; border-bottom: 1px solid #b8913a; margin: 0 .6in; }
+.strip div { text-align: center; padding: 12px 6px; border-left: 1px solid #2a2a2a; }
+.strip div:first-child { border-left: 0; }
+.strip b { display: block; font: 600 12pt "Oswald"; text-transform: uppercase; }
+.strip span { font-size: 7.5pt; letter-spacing: .12em; text-transform: uppercase; color: #a8a29a; }
+.body { display: grid; grid-template-columns: 1.15fr 1fr; gap: .4in; padding: .35in .6in 0; }
+h2 { font: 600 13pt "Oswald"; text-transform: uppercase; color: #d4af5a; letter-spacing: .06em; margin-bottom: 8px; }
+p + p { margin-top: 8px; }
+.talk { padding: 8px 0; border-bottom: 1px solid #2a2a2a; }
+.talk b { display: block; font: 600 12pt "Oswald"; text-transform: uppercase; }
+.talk span { color: #c9c2b8; font-size: 9.5pt; }
+.aud { margin-top: 12px; font-size: 9.5pt; color: #c9c2b8; }
+.aud b { color: #f4efe6; }
+.foot { position: absolute; left: .6in; right: .6in; bottom: .5in; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #b8913a; padding-top: 14px; }
+.foot .book { font: 700 22pt "Oswald"; text-transform: uppercase; }
+.foot .contact { text-align: right; font-size: 10pt; line-height: 1.6; }
+.foot .contact b { color: #d4af5a; }
+.pagewrap { position: relative; height: 11in; }
+</style>
+</head>
+<body>
+<div class="pagewrap">
+  <div class="top">
+    <div class="photo"></div>
+    <div class="copy">
+      <div class="brand">Marc Alfano</div>
+      <h1>From the kitchen<br>to the nations.</h1>
+      <p class="sub">Keynote speaker, chef, author and evangelist.</p>
+    </div>
+  </div>
+  <div class="strip">
+    <div><b>Le Cordon Bleu</b><span>First in class</span></div>
+    <div><b>3 Michelin-rated</b><span>Kitchens in one year</span></div>
+    <div><b>28</b><span>Countries</span></div>
+    <div><b>Host</b><span>The 7K Revelation Podcast</span></div>
+  </div>
+  <div class="body">
+    <div>
+      <h2>About Marc</h2>
+      <p>Marc Alfano grew up in a small town in western Pennsylvania. He graduated first in his class at Le Cordon Bleu, opened his own deli, and in 2008 worked stages at Restaurant Daniel, Charlie Trotter's and the French Laundry, three Michelin-rated kitchens in one year.</p>
+      <p>He built award-winning restaurants and a national tiramisu brand, then went to Bible school. Today Marc and his wife Christina preach and teach in 28 countries. They founded Alfano Ministries International and Marketplace Revival.</p>
+      <p>He's the author of The Road to Michelin, Faith to Build, GO, Now Faith, Wiser Than AI and the novel The Last Convert.</p>
+    </div>
+    <div>
+      <h2>Signature talks</h2>
+      <div class="talk"><b>The Road to Michelin</b><span>Excellence in any industry, from three of the best kitchens in the world.</span></div>
+      <div class="talk"><b>Faith to Build</b><span>Building a business and a life on faith.</span></div>
+      <div class="talk"><b>Marketplace Revival</b><span>Faith at work, not just on Sunday.</span></div>
+      <p class="aud"><b>Audiences:</b> churches and conferences, business groups and chambers, culinary schools, leadership and men's events.</p>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="book">Book Marc</div>
+    <div class="contact"><b>marc@alfanoministries.com</b><br>thealfanos.com</div>
+  </div>
+</div>
+</body>
+</html>
