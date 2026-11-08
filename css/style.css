@@ -67,7 +67,9 @@ h2 { font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; margin
 .talk p { color: var(--muted); font-size: 15px; line-height: 1.6; }
 .audiences { margin-top: 28px; color: var(--muted); font-size: 15px; }
 .audiences strong { color: var(--text); }
-.talks-photo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+.talks-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 38% center; }
+.about-banner { margin-bottom: 24px; }
+.about-banner img { width: 100%; aspect-ratio: 21 / 8; object-fit: cover; object-position: center 35%; }
 
 .about-grid { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 24px; align-items: start; }
 .about-grid figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
@@ -112,7 +114,7 @@ h2 { font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; margin
 /* Tablet */
 @media (max-width: 1000px) {
   .talks-grid, .media-grid, .book-grid { grid-template-columns: 1fr; }
-  .talks-photo { display: none; }
+  .talks-photo img { aspect-ratio: 4 / 3; object-position: center; }
   .about-grid { grid-template-columns: 1fr 1fr; }
   .about-copy { grid-column: 1 / -1; border-left: 0; padding-left: 0; }
   .books { grid-template-columns: repeat(3, 1fr); }
@@ -182,3 +184,5 @@ h2 { font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; margin
 .kit-contact .btn { margin-top: 16px; }
 @media (max-width: 1000px) { .two-col { grid-template-columns: 1fr; } }
 @media (max-width: 760px) { .kit-hero { padding: 120px 0 50px; } .bio { padding: 20px; } }
+
+@media (max-width: 760px) { .about-banner img { aspect-ratio: 4 / 3; } }
