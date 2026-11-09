@@ -39,7 +39,7 @@ form.addEventListener("submit", async (e) => {
     form.reset();
     status.textContent = "Thank you. We got your request and will be in touch soon.";
   } catch {
-    status.innerHTML = 'Something went wrong. Please email <a href="mailto:marc@alfanoministries.com">marc@alfanoministries.com</a>.';
+    status.innerHTML = 'Something went wrong. Please email <a href="mailto:marc@thealfanos.com">marc@thealfanos.com</a>.';
   } finally {
     btn.disabled = false;
   }
