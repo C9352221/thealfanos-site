@@ -53,7 +53,7 @@ h2 { font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; margin
 .strip-row div { padding: 28px 16px; text-align: center; border-left: 1px solid var(--line); }
 .strip-row div:first-child { border-left: 0; }
 .strip strong { display: block; font-size: 22px; font-weight: 600; }
-.strip span { display: block; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.strip-row > div > span:not(.strip-icon) { display: block; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
 
 /* Sections */
 .section { padding: 110px 0; }
@@ -186,3 +186,12 @@ h2 { font-size: clamp(36px, 5vw, 56px); line-height: 1; font-weight: 700; margin
 @media (max-width: 760px) { .kit-hero { padding: 120px 0 50px; } .bio { padding: 20px; } }
 
 @media (max-width: 760px) { .about-banner img { aspect-ratio: 4 / 3; } }
+
+/* Strip icons */
+.strip-icon { display: block; height: 40px; margin: 0 auto 12px; color: var(--gold); }
+svg.strip-icon { width: 40px; }
+svg.strip-icon.stars { width: 104px; height: 32px; margin-top: 4px; margin-bottom: 16px; }
+img.strip-icon.map { width: auto; height: 40px; opacity: .95; }
+.strip-icon.pod { display: inline-flex; flex-direction: column; justify-content: center; align-items: center; width: 52px; height: 52px; margin: -6px auto 6px; background: #1f3d61; border: 1px solid var(--gold-deep); border-radius: 6px; line-height: 1; }
+.strip-icon.pod b { font: 700 22px/1 Georgia, "Times New Roman", serif; color: #e8b923; }
+.strip-icon.pod i { font: 600 6px/1 var(--body); font-style: normal; letter-spacing: .14em; text-transform: uppercase; color: #fff; margin-top: 4px; }
